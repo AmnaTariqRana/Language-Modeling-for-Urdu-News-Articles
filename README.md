@@ -16,12 +16,10 @@ Implemented and compared multiple vectorization techniques to capture semantic r
 * **TF-IDF & PPMI Baselines:** Built term-document and co-occurrence matrices (k=5).
 
 
-* 
-**Skip-gram Word2Vec:** Implemented from scratch with **Negative Sampling** (K=10) and noise distribution.
+* **Skip-gram Word2Vec:** Implemented from scratch with **Negative Sampling** (K=10) and noise distribution.
 
 
-* 
-**Evaluation:** Conducted analogy tests (a:b::c:?) and cosine similarity analysis for query words like *Pakistan, Adalat,* and *Fauj*.
+* **Evaluation:** Conducted analogy tests (a:b::c:?) and cosine similarity analysis for query words like *Pakistan, Adalat,* and *Fauj*.
 
 
 
@@ -29,20 +27,16 @@ Implemented and compared multiple vectorization techniques to capture semantic r
 
 Developed a multi-task learning framework for Urdu linguistics:
 
-* 
-**Architecture:** 2-layer **Bidirectional LSTM** with Dropout (p=0.5).
+* **Architecture:** 2-layer **Bidirectional LSTM** with Dropout (p=0.5).
 
 
-* 
-**POS Tagging:** 12-tag classification using a rule-based seed tagger and linear decoder.
+* **POS Tagging:** 12-tag classification using a rule-based seed tagger and linear decoder.
 
 
-* 
-**Named Entity Recognition (NER):** Implemented a **Conditional Random Field (CRF)** layer with **Viterbi decoding** for structured entity detection (PER, LOC, ORG, MISC).
+* **Named Entity Recognition (NER):** Implemented a **Conditional Random Field (CRF)** layer with **Viterbi decoding** for structured entity detection (PER, LOC, ORG, MISC).
 
 
-* 
-**Ablation Study:** Analyzed the impact of unidirectional context, dropout regularization, and pre-trained vs. random embedding initialization.
+* **Ablation Study:** Analyzed the impact of unidirectional context, dropout regularization, and pre-trained vs. random embedding initialization.
 
 
 
@@ -50,20 +44,16 @@ Developed a multi-task learning framework for Urdu linguistics:
 
 Engineered a custom Transformer architecture (no `nn.Transformer` built-ins) for 5-class news classification.
 
-* 
-**Multi-Head Attention:** 4 heads with scaled dot-product attention and padding masks.
+* **Multi-Head Attention:** 4 heads with scaled dot-product attention and padding masks.
 
 
-* 
-**Positional Encoding:** Fixed sinusoidal signals added to input embeddings.
+* **Positional Encoding:** Fixed sinusoidal signals added to input embeddings.
 
 
-* 
-**Optimization:** Utilized **AdamW** with a **Cosine Learning Rate Schedule** and warmup steps.
+* **Optimization:** Utilized **AdamW** with a **Cosine Learning Rate Schedule** and warmup steps.
 
 
-* 
-**Interpretability:** Generated attention heatmaps to visualize token-level importance during classification.
+* **Interpretability:** Generated attention heatmaps to visualize token-level importance during classification.
 
 
 
@@ -72,16 +62,13 @@ Engineered a custom Transformer architecture (no `nn.Transformer` built-ins) for
 ##  Tech Stack
 
 * **Language:** Python
-* 
-**Framework:** PyTorch (Core Tensor Ops, Autograd) 
+* **Framework:** PyTorch (Core Tensor Ops, Autograd) 
 
 
-* 
-**Visualization:** Matplotlib, Seaborn (t-SNE plots, attention heatmaps) 
+* **Visualization:** Matplotlib, Seaborn (t-SNE plots, attention heatmaps) 
 
 
-* 
-**Data Handling:** NumPy, JSON 
+* **Data Handling:** NumPy, JSON 
 
 
 
@@ -92,16 +79,13 @@ Engineered a custom Transformer architecture (no `nn.Transformer` built-ins) for
 
 ##  Key Results & Insights
 
-* 
-**Embeddings:** Skip-gram (Condition C3) outperformed PPMI baselines in capturing complex analogies.
+* **Embeddings:** Skip-gram (Condition C3) outperformed PPMI baselines in capturing complex analogies.
 
 
-* 
-**CRF Benefit:** The addition of a CRF layer significantly improved NER F1-scores by enforcing valid tag transitions (e.g., B-PER followed by I-PER).
+* **CRF Benefit:** The addition of a CRF layer significantly improved NER F1-scores by enforcing valid tag transitions (e.g., B-PER followed by I-PER).
 
 
-* 
-**Attention Analysis:** Transformer heatmaps revealed high focus on indicative keywords (e.g., "election" for Politics, "GDP" for Economy).
+* **Attention Analysis:** Transformer heatmaps revealed high focus on indicative keywords (e.g., "election" for Politics, "GDP" for Economy).
 
 
 
