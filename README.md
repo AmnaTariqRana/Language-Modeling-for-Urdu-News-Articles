@@ -13,8 +13,7 @@ The pipeline is divided into three core modules, focusing on the processing and 
 
 Implemented and compared multiple vectorization techniques to capture semantic relationships:
 
-* 
-**TF-IDF & PPMI Baselines:** Built term-document and co-occurrence matrices (k=5).
+* **TF-IDF & PPMI Baselines:** Built term-document and co-occurrence matrices (k=5).
 
 
 * 
